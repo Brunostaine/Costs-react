@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
+import Container from './components/layout/Container';
 import Footer from './components/layout/Footer';
 import Navbar from './components/layout/Navbar';
 import Company from './components/pages/Company';
@@ -12,13 +13,15 @@ function App() {
   return (
     <Router>
         <Navbar />
+        <Container>
             <Routes>
-                    <Route exact path='/' element={<Home/>} />
-                    <Route exact path='/projects' element={<Projects/>} />
-                    <Route exact path='/company' element={<Company/>} />
-                    <Route exact path='/contact' element={<Contact/>} />
-                    <Route exact path='/newProject' element={<NewProject/>} />
+                    <Route path='/' element={<Home/>} />
+                    <Route path='/projects' element={<Projects/>} />
+                    <Route path='/company' element={<Company/>} />
+                    <Route path='/contact' element={<Contact/>} />
+                    <Route path='/newProject' element={<NewProject/>} />
             </Routes>
+            </Container>
         <Footer />
     </Router>
   );
