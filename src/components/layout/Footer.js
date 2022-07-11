@@ -10,7 +10,7 @@ function Footer() {
                 <li className='social_list'><FaInstagram /></li>
                 <li className='social_list'><FaLinkedin /></li>
             </ul>
-            <p><span>Costs Projetos</span></p>
+            <p><span>Costs </span>Projetos</p>
         </footer>
     )
 }

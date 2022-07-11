@@ -3,17 +3,20 @@
     justify-content: space-around;
     align-items: center;
     padding: 16px;
+    flex-direction: column;
     /* position: fixed;
     bottom: 0;   */
     background-color: #222;
     color: #fff; 
     width: 100%; 
+
 }
 
 .social_list{
     display: flex;
     justify-content: center;
     list-style: none;
+    margin-bottom: 16px;
 }
 
 .social_list li {
@@ -27,6 +30,14 @@
 .social_list svg {
     font-size: 1.5em;
     cursor: pointer;
+}
+
+.footer p {
+    font-weight: bold;
+}
+
+.footer span {
+    color: #ffbb33;
 }
 
 
