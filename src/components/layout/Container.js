@@ -2,7 +2,7 @@ import  './Container.css'
 
 function Container(props){
     return(
-        <div className='container'>
+        <div className='container min-height'>
             {props.children}
         </div>
     )
